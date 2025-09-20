@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App || JS OOP</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="setting">
+        <div class="container">
+            <h2>Quiz Setting</h2>
+        <label for="category" class="bold">Select Category:</label>
+        <select name="" id="category">
+            <option hidden></option>
+            <option value="9">General Knowledge</option>
+            <option value="27">Animals</option>
+            <option value="23">History</option>
+            <option value="21">Sports</option>
+        </select>
+        <div id="difficulty">
+            <label for="difficulty" class="bold">Difficulty:</label>
+            <label for="easy">
+                <input type="radio" id="easy">Easy
+            </label>
+             <label for="medium">
+                <input type="radio" id="medium">Medium
+            </label> <label for="hard">
+                <input type="radio" id="hard">Hard
+            </label>
+        </div>
+        <div id="NofQues">
+            <label for="nQuestions" class="bold">Number of Questions: </label>
+                <input type="number" id="nQuestions">
+        </div>
+        <button class="submit" id="start"> Start Quiz</button>
+        </div>
+    </div>
+    <div class="quiz" style="display: none;">
+        <div class="container">
+        <div class="count">
+            <p class="current">0</p>
+            <p>/</p>
+            <p class="total">total</p>
+        </div>
+        <h3 id="questions"></h3>
+        <label id="a1" class="answers"></label>
+        <label id="a2" class="answers"></label>
+        <label id="a3" class="answers"></label>
+        <label id="a4" class="answers"></label>
+        <button id="next">Next</button>
+        </div>
+    </div>
+    <div class="final" style="display: none;">
+        <div class="container">
+            <h3>Result Final:</h3>
+            <p class="score"></p>
+            <h4>Try again</h4>
+            <button id="again">Again</button>
+        </div>
+    </div>
+    <script src="main.js" type="module"></script>
+</body>
+</html>

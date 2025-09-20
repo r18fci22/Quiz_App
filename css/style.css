@@ -1,0 +1,61 @@
+:root
+{
+    --green1:#11150D;
+    --green2:#314026;
+    --green3:#526A40;
+    --green4:#739559;
+    --green5:#94BF73;
+    --green6:#B5EA8C;
+    --white:#fff;
+}
+.container
+{
+ margin: 150px auto;
+ padding: 40px;
+ background-color: var(--green3);
+}
+.setting .container
+{
+    width: 40%;
+}
+.quiz .container
+{
+    width: 50%;
+}
+.final .container
+{
+    width: 30%;
+}
+.bold
+{
+    font-size:19px;
+    margin-right:10px ;
+}
+.setting select,#NofQues input
+{
+    width: 200px;
+    padding: 5px 15px;
+}
+#difficulty input,.quiz .answers
+{
+margin: 20px 25px 20px 0;
+}
+.submit,#next,#again
+{
+    padding: 9px;
+    width: 140px;
+    border-radius: 4px;
+    font-size: 16px;
+    border: 1px solid var(--green4);
+    display: block;
+    margin-top: 15px;
+}
+.quiz .count
+{
+    display: flex;
+    font-weight: bold;
+}
+.final p
+{
+    font-size: 17px;
+}
